@@ -1,4 +1,4 @@
-# Dockerizing an Node App (ExpressJS)
+# Dockerize Node App (ExpressJS)
 ## Setup
 1. Install docker
 2. Check docker, pake ini : `docker -v`
