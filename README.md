@@ -30,7 +30,7 @@
         >>> Mengutip dari stackoverflow :
         *-it is short for --interactive + --tty when you docker run with this command.. it would take you straight inside of the container,, where -d is short for --detach which means you just run the container and then detach from it so basically you run container in the background.. edit : so if you run docker container with-itd it would run the-it options and detach you from the container, so your container still running in the background even without any default app to run..*
     - `--name express-example-app` : memberikan nama container dengan express example-app
-    - `-p 4300:3210` : -p stands for publish, jadi tentukan port yang bisa diakses oleh all over the world / dari luar container. Sebelah kanan publish port, sedangkan yang kiri adalah expose port (port yang bisa di expose oleh image-nya sendiri). 
+    - `-p 4300:3210` : -p stands for publish, jadi tentukan port yang bisa diakses oleh all over the world / dari luar container. Sebelah kanan (4300) publish port, sedangkan yang kiri (3210) adalah expose port (port yang bisa di expose oleh image-nya sendiri). 
     Mendapatkan expose port dari sebuah image :
         ```
         docker image inspect f877e80bb9ef | grep -A 2 ExposedPorts
