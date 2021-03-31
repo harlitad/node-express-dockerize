@@ -32,9 +32,9 @@
     - `--name express-example-app` : memberikan nama container dengan express example-app
     - `-p 4300:3210` : -p stands for publish, jadi tentukan port yang bisa diakses oleh all over the world / dari luar container. Sebelah kanan publish port, sedangkan yang kiri adalah expose port (port yang bisa di expose oleh image-nya sendiri). 
     Mendapatkan expose port dari sebuah image :
-    ```
-    docker image inspect f877e80bb9ef | grep -A 2 ExposedPorts
-    ``` 
+        ```
+        docker image inspect f877e80bb9ef | grep -A 2 ExposedPorts
+        ``` 
     - `-d` : -d stands for detach, kalau kata docker gini `Run container in background and print container ID`. Jadi dia ga akan nampilin logs container nya ketika menjalankan, kalau mau ngeliat log cukup jalanin `docker logs name_container`
     - `harlitad/express-example-app` : nama image yang akan dibuat container nya.
 
